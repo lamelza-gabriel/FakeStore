@@ -1,0 +1,125 @@
+//MOBILE FIRST
+
+.individual-item-container {
+	margin: 70px auto;
+	width: 80%;
+	border: 1px solid gray;
+	border-radius: 10px;
+	.indiviual-item-img-container {
+		border-bottom: 1px solid gray;
+		text-align: center;
+
+		.individual-item-image {
+			text-align: center;
+			margin: 0px auto;
+			height: auto;
+			width: 200px;
+			padding: 20px;
+		}
+	}
+	.individual-item-info {
+		padding: 20px;
+		.individual-item-info-title {
+			text-align: center;
+			margin: 10px;
+		}
+		.individual-item-info-p {
+			font-size: 14px;
+		}
+		.price {
+			text-align: center;
+			text-decoration: underline;
+			font-size: 16px;
+			margin: 10px;
+		}
+	}
+	.item-form {
+		.size-option-container {
+			margin: 20px auto;
+		}
+		.individual-item-btn {
+			width: 100%;
+			padding: 15px 30px;
+			background-color: black;
+			color: white;
+			border: none;
+		}
+	}
+}
+
+//PC
+
+@media only screen and (min-width: 1024px) {
+	.individual-item-container {
+		border-radius: 5px;
+		//padding: 50px;
+		border: 1px solid black;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 60%;
+		margin: 100px auto;
+		.indiviual-item-img-container {
+			padding: 50px;
+			align-items: center;
+			width: 70%;
+			text-align: center;
+			border-right: 1px solid black;
+			.individual-item-image {
+				width: 80%;
+				max-height: 700px;
+			}
+		}
+		.individual-item-info {
+			width: 30%;
+			padding: 20px;
+			//border: 1px solid blue;
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			.individual-item-info-title {
+				font-size: 25px;
+			}
+			.individual-item-info-p-container {
+				height: 40%;
+				.individual-item-info-p {
+					margin: 15px 0px;
+					border-bottom: 1px solid black;
+					padding: 10px 0px;
+				}
+			}
+			.item-form {
+				display: flex;
+				flex-direction: column;
+				height: 15%;
+				justify-content: space-around;
+				.size-option-container {
+					//border: 1px solid blue;
+					padding: 10px;
+					.size-option {
+						padding: 20px;
+						display: flex;
+						justify-content: space-between;
+						width: 90%;
+						margin: auto;
+						label {
+							margin: 5px;
+							select {
+								margin: 0px 0px 0px 5px;
+								padding: 5px;
+							}
+						}
+					}
+				}
+				.individual-item-btn {
+					padding: 15px 30px;
+					background-color: black;
+					color: white;
+					border: none;
+				}
+			}
+		}
+	}
+}

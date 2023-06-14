@@ -1,0 +1,121 @@
+/*
+
+.hide {
+	display: none;
+}
+*/
+.home-upper-text {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.home-nav {
+  display: none;
+}
+
+.home-nav-mobile {
+  width: 100vw;
+  background-color: #222;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.home-nav-mobile .home-nav-mobile-menu {
+  width: 20%;
+}
+.home-nav-mobile .home-nav-mobile-menu .menu-mobile-logo {
+  width: 30px;
+}
+.home-nav-mobile .home-nav-cart {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+.home-nav-mobile .home-nav-cart .nav-cart-logo {
+  width: 30px;
+}
+
+.mobile-nav-display {
+  background-color: #333;
+  width: 100%;
+}
+.mobile-nav-display .mobile-nav {
+  border-bottom: 1px solid white;
+  color: gray;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 50px 10px 10px;
+}
+.mobile-nav-display .mobile-nav a {
+  color: gray;
+  text-decoration: none;
+}
+.mobile-nav-display .mobile-nav svg {
+  width: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-nav-mobile {
+    display: none;
+  }
+  .home-upper-text {
+    background-color: black;
+    text-align: center;
+  }
+  .home-upper-text p {
+    color: white;
+    padding: 4px;
+  }
+  .home-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+  }
+  .home-nav .home-nav-logo {
+    width: 20%;
+    text-align: center;
+  }
+  .home-nav .home-nav-logo img {
+    width: 65px;
+  }
+  .home-nav .home-barnav {
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+  }
+  .home-nav .home-barnav .home-navlink {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    color: black;
+  }
+  .home-nav .home-barnav .home-navlink:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+  .home-nav .home-nav-cart {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-nav .home-nav-cart .home-nav-cart-link {
+    color: black;
+  }
+  .home-nav .home-nav-cart .nav-cart-logo {
+    width: 40px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,101 @@
+.footer-pc {
+  display: none;
+}
+
+.footer-mobile {
+  background-color: #232323;
+  height: auto;
+  padding: 30px;
+}
+.footer-mobile .clasic-contact-mobile {
+  text-align: center;
+  color: white;
+  /*
+  de momento al pedo
+  .clasic-text-contact-mobile {
+  }
+  */
+}
+.footer-mobile .clasic-contact-mobile .clasic-text-contact-mobile-title {
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.footer-mobile .contact-section-mobile .contact-text-mobile {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.footer-mobile .contact-section-mobile .footer-contact-container-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-mobile .contact-section-mobile .footer-contact-container-mobile svg {
+  height: 30px;
+  fill: white;
+}
+.footer-mobile .about-container-mobile {
+  text-align: center;
+}
+.footer-mobile .about-container-mobile .about-text-mobile {
+  display: block;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px auto;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-pc {
+    background-color: #232323;
+    display: flex;
+    padding: 80px 40px;
+    height: 300px;
+  }
+  .footer-pc .footer-section-container {
+    padding: 10px;
+    border-right: 1px solid white;
+    color: white;
+    width: 25%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .footer-pc .footer-section-container .footer-section-title {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+  }
+  .footer-pc .footer-section-container .footer-section-p {
+    font-size: 13px;
+  }
+  .footer-pc .footer-section-container-logo {
+    padding: 10px;
+    width: 25%;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+  }
+  .footer-pc .footer-section-container-logo .footer-section-title {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+  }
+  .footer-pc .footer-section-container-logo .footer-contact-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-pc .footer-section-container-logo .footer-contact-container svg {
+    height: 30px;
+    fill: white;
+  }
+  .footer-mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=Footer.css.map */
