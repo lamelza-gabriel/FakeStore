@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
     margin: 100px auto;
   }
   .individual-item-container .indiviual-item-img-container {
@@ -65,7 +65,7 @@
     max-height: 700px;
   }
   .individual-item-container .individual-item-info {
-    width: 30%;
+    width: 35%;
     padding: 20px;
     text-align: left;
     display: flex;
@@ -107,6 +107,7 @@
     padding: 5px;
   }
   .individual-item-container .individual-item-info .item-form .individual-item-btn {
+    margin-bottom: 50px;
     padding: 15px 30px;
     background-color: black;
     color: white;

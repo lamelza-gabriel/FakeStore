@@ -91,6 +91,8 @@
   width: 40%;
 }
 .cart-btns-action-container .cart-test-btn .cart-btn-action {
+  background-color: transparent;
+  border: none;
   display: flex;
   align-items: center;
 }

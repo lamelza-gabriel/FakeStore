@@ -6,6 +6,7 @@ import MenIcon from "../assets/cart/men-icon.svg";
 import WomenIcon from "../assets/cart/women-icon.svg";
 import JeweleryIcon from "../assets/cart/jewelery-icon.svg";
 import TechIcon from "../assets/cart/tech-icon.svg";
+import HomeIcon from "../assets/cart/home-icon.svg";
 
 import "../styles/home/navbar/Navbar.css";
 import { NavLink } from "react-router-dom";
@@ -59,6 +60,10 @@ const Navbar = () => {
 			</nav>
 			{open ? (
 				<nav className='mobile-nav-display'>
+					<div className='mobile-nav'>
+						<NavLink to='/'>Home</NavLink>
+						<img src={HomeIcon} alt='menu logo mobile' />
+					</div>
 					<div className='mobile-nav'>
 						<NavLink to='/men'>Men</NavLink>
 						<img src={MenIcon} alt='menu logo mobile' />

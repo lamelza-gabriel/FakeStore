@@ -51,11 +51,99 @@ main {
 				border-radius: 10px;
 				width: 90%;
 				height: 100%;
+				max-width: 350px;
 			}
 		}
 	}
 	.main-news-section {
 		display: none;
+	}
+}
+
+//TABLET
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	main {
+		.main-text-container {
+			display: flex;
+			margin: 50px auto;
+			border: 1px solid black;
+			width: 80%;
+			padding: 20px 30px;
+			align-items: center;
+			justify-content: center;
+			.main-text {
+				padding-left: 5px;
+				font-family: "Caveat", cursive;
+				font-weight: 700;
+				font-size: 25px;
+			}
+			.img-logo-container {
+				height: 38px;
+				width: auto;
+				padding: 2px;
+				border: 1px solid black;
+				.main-logo {
+					width: 60px;
+					padding: 2px;
+					border: 1px solid black;
+				}
+			}
+		}
+		.categories-container-mobile {
+			display: none;
+		}
+		.categories-container {
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			display: flex;
+			grid-gap: 10px;
+			width: 85%;
+			margin: 100px auto;
+			//grid-auto-rows: minmax(100px, auto);
+			.category-img-container {
+				position: relative;
+				border: 1px solid black;
+				border-radius: 10px;
+				width: 50%;
+				.category-img {
+					height: 100%;
+					width: 100%;
+					border-radius: 10px;
+				}
+				.category-text {
+					color: white;
+					position: absolute;
+					font-size: 25px;
+					top: 10%;
+					left: 10%;
+					z-index: 100;
+				}
+			}
+			.category-img-container:hover {
+				transition: 0.2s;
+				opacity: 0.75;
+			}
+			.one {
+				grid-column: 1 / 2;
+				grid-row: 1;
+				height: 300px;
+			}
+			.two {
+				grid-column: 2 / 3;
+				grid-row: 1 / 4;
+			}
+			.three {
+				grid-column: 1;
+				grid-row: 2 / 5;
+			}
+			.four {
+				height: 300px;
+				grid-column: 2;
+				grid-row: 4 / 4;
+			}
+		}
 	}
 }
 
@@ -74,16 +162,19 @@ main {
 			display: flex;
 			margin: 80px auto;
 			border: 1px solid black;
-			width: 30%;
+			width: 70%;
 			padding: 30px 50px;
 			align-items: center;
+			justify-content: center;
 			.main-text {
+				display: flex;
 				padding-left: 5px;
 				font-family: "Caveat", cursive;
 				font-weight: 700;
 				font-size: 25px;
 			}
 			.img-logo-container {
+				width: auto;
 				height: 38px;
 				padding: 2px;
 				border: 1px solid black;
@@ -116,7 +207,6 @@ main {
 					width: 100%;
 					border-radius: 10px;
 				}
-
 				.category-text {
 					color: white;
 					position: absolute;
@@ -182,7 +272,7 @@ main {
 			.latest-products-map-container {
 				width: 20%;
 				border: 1px solid black;
-				height: 300px;
+				height: 350px;
 				padding: 10px;
 				display: flex;
 				flex-direction: column;
@@ -190,7 +280,7 @@ main {
 				align-items: center;
 				margin: 50px 3px;
 				.latest-products-map-unit {
-					height: 150px;
+					height: 130px;
 				}
 				.latest-products-info-container {
 					.latest-products-map-text {

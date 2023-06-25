@@ -99,6 +99,8 @@
 	.cart-test-btn {
 		width: 40%;
 		.cart-btn-action {
+			background-color: transparent;
+			border: none;
 			display: flex;
 			align-items: center;
 			.cart-btn-icon {

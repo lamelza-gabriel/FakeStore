@@ -62,6 +62,59 @@
 	}
 }
 
+//TABLET
+
+@media only screen and (min-width: 768px) {
+	.home-nav-mobile {
+		display: none;
+	}
+	.home-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 85%;
+		align-items: center;
+		margin: auto;
+		height: 80px;
+		.home-nav-logo {
+			width: 20%;
+			text-align: center;
+			img {
+				width: 65px;
+			}
+		}
+		.home-barnav {
+			justify-content: space-around;
+			display: flex;
+			width: 60%;
+			.home-navlink {
+				text-decoration: none;
+				text-transform: capitalize;
+				font-weight: 500;
+				border-bottom: 1px solid transparent;
+				color: black;
+			}
+			.home-navlink:hover {
+				cursor: pointer;
+				transition: 0.5s;
+				color: gray;
+				border-bottom: 1px solid gray;
+			}
+		}
+		.home-nav-cart {
+			width: 10%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			.home-nav-cart-link {
+				color: black;
+			}
+			.nav-cart-logo {
+				width: 40px;
+			}
+		}
+	}
+}
+
 //PC
 
 @media only screen and (min-width: 1024px) {
@@ -76,7 +129,6 @@
 			padding: 4px;
 		}
 	}
-
 	.home-nav {
 		display: flex;
 		justify-content: space-between;
